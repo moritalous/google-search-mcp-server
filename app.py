@@ -31,7 +31,7 @@ def perform_web_search(query: str, num_results: int = 10):
 
 
 demo = gr.Interface(
-    fn=perform_web_search, inputs=[gr.Text(), gr.Number(value=10)], outputs=gr.Textbox
+    fn=perform_web_search, inputs=[gr.Text(), gr.Number(value=10)], outputs=gr.Textbox()
 )
 
 if __name__ == "__main__":
